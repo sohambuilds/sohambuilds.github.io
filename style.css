@@ -230,7 +230,7 @@ img {
   pointer-events: none;
 }
 
-.intro__photo-wrap:has(img[src]:not([src=""])) ::after {
+.intro__photo-wrap:has(img[src]:not([src=""]))::after {
   display: none;
 }
 
@@ -686,7 +686,7 @@ img {
 }
 
 .timeline__details li::before {
-  content: '—';
+  content: '·';
   position: absolute;
   left: 0;
   color: var(--text-light);
