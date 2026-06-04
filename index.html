@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soham Roy: Researcher & Engineer</title>
-  <meta name="description" content="Soham Roy. CS undergrad researching generative AI, diffusion models, and responsible AI. Published at ICCVW 2025." />
+  <meta name="description" content="Soham Roy — computer science undergraduate at KIIT University working on agentic AI systems, evaluation benchmarks, and applied machine learning. Co-author of an ICCVW 2025 paper on copyright protection for diffusion models, with further benchmark work under review." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -20,7 +20,7 @@
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#achievements">Achievements</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -43,12 +43,14 @@
         <div class="intro__bio">
           <h1 class="intro__name">Soham Roy</h1>
           <p class="intro__role">Researcher &amp; Engineer</p>
-          <p class="intro__tagline">I research how to make generative AI safer<br>and build the systems to prove it.</p>
+          <p class="intro__tagline">Fullstack AI Engineer</p>
           <p class="intro__desc">
-            CS undergrad at <strong>KIIT University</strong>, working on 
-            <strong>multimodality</strong>, <strong>machine unlearning</strong>, and 
-            <strong>copyright protection</strong> in generative AI. Part of 
-            <strong>RespAI Lab</strong>, published at <strong>ICCVW 2025</strong>.
+            Computer science undergraduate at <strong>KIIT University</strong>, currently in my
+            pre-final year. At present, I'm a SWE Intern at <strong>Cisco</strong>. I work on <strong>agentic AI systems</strong>, the
+            <strong>benchmarks</strong> used to evaluate them, and applied machine learning more
+            generally. I'm a member of <strong>RespAI Lab</strong>, where my work on copyright
+            protection for diffusion models was accepted at <strong>ICCVW 2025</strong>. My interests may extend to anything else that contributes to the domain of Human Knowledge.
+
           </p>
           <div class="intro__links">
             <a href="https://github.com/sohambuilds" target="_blank" rel="noopener" aria-label="GitHub">
@@ -59,9 +61,6 @@
             </a>
             <a href="mailto:sohamroy.dev@gmail.com" aria-label="Email">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </a>
-            <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener" aria-label="Google Scholar">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
             </a>
           </div>
         </div>
@@ -79,13 +78,14 @@
       <div class="research__list">
         <!-- Publication -->
         <article class="paper reveal">
-          <div class="paper__venue">ICCVW 2025</div>
-          <h3 class="paper__title">Dynamic Inference-Time Copyright Shielding for AI Image Generation</h3>
-          <p class="paper__authors">Soham Roy, et al.</p>
+          <div class="paper__venue">ICCVW 2025 &middot; Accepted</div>
+          <h3 class="paper__title">Guardians of Generation: Dynamic Inference-Time Copyright Shielding with Adaptive Guidance for AI Image Generation</h3>
+          <p class="paper__authors">Soham Roy, Abhishek Mishra, Shirish Karande, Murari Mandal</p>
           <p class="paper__abstract">
-            We protect copyrighted content in diffusion model outputs using dynamic 
-            inference-time interventions, so models can generate responsibly without 
-            needing to be retrained.
+            A method for keeping copyrighted material out of diffusion-model outputs at the point of
+            generation, rather than by retraining the model. The work intervenes during sampling
+            through adaptive guidance, so an already-trained model can be steered away from protected
+            content without the cost of fine-tuning or a fresh training run.
           </p>
           <div class="paper__links">
             <a href="https://arxiv.org/abs/2503.16171" target="_blank" rel="noopener" class="paper__link">
@@ -95,24 +95,65 @@
           </div>
         </article>
 
+        <!-- Publication -->
+        <article class="paper reveal">
+          <div class="paper__venue">EMNLP (ARR) &middot; Under Review</div>
+          <h3 class="paper__title">"I Strongly Suspect This Website Is a Scam": Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents</h3>
+          <p class="paper__abstract">
+            A benchmark built around a single question: when an autonomous web agent is carrying out a
+            task and lands on a website designed to manipulate it, will the agent give up the user's
+            personal information? It reports two quantities together: how much private data actually
+            leaks, and how reliably the agent recognises that it is under attack. The evaluation covers
+            91 adversarial environments, each paired with a benign control, organised under an
+            eight-part taxonomy of manipulation tactics and tested on four current frontier models. The
+            protocol was pre-registered before any data was collected.
+          </p>
+            <div class="paper__links">
+            <a href="https://arxiv.org/abs/2606.00497" target="_blank" rel="noopener" class="paper__link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              arXiv
+            </a>
+          </div>
+        </article>
+
+        <!-- Publication -->
+        <article class="paper reveal">
+          <div class="paper__venue">EMNLP (ARR) &middot; Under Review</div>
+          <h3 class="paper__title">GeoAgent: A Benchmark for Active Visual Geolocation</h3>
+          <p class="paper__abstract">
+            GeoAgent introduces a benchmark for geolocalization in vision-language models based on
+            embodied navigation rather than static image analysis. Instead of predicting a location
+            from a fixed set of images, an agent actively explores Google Street View, moving and
+            rotating before committing to a guess. The benchmark spans 1,200 navigable locations across
+            100 cities worldwide, covering both developed and developing regions and a range of
+            recognisability. Across frontier VLMs, active exploration generally improves accuracy over
+            static multi-view baselines, with Gemini 3.0 Flash and GPT-5 Mini performing best, though
+            models rarely recover from a wrong initial hypothesis and tend to reinforce early mistakes.
+            The results also reveal a marked geographic bias, with most models doing considerably better
+            in developed regions than developing ones. The paper argues that embodied navigation exposes
+            weaknesses in spatial reasoning that static geolocation benchmarks miss, positioning GeoAgent
+            as a more realistic test of agentic geospatial intelligence.
+          </p>
+        </article>
+
         <!-- Research Areas -->
         <div class="research__areas reveal">
           <h3 class="research__areas-title">Current Research Areas</h3>
           <div class="research__areas-grid">
             <div class="research-area">
               <div class="research-area__icon">01</div>
-              <h4>Multimodality</h4>
-              <p>Working on ways to evaluate and improve how well agentic systems handle multiple modalities.</p>
+              <h4>Agentic Systems</h4>
+              <p>AI systems that take actions in an environment, such as browsing, navigating, or calling tools, rather than only returning text. My interest is in how they behave when conditions are adversarial or simply unlike their training data.</p>
             </div>
             <div class="research-area">
               <div class="research-area__icon">02</div>
-              <h4>Copyright Protection</h4>
-              <p>Making it possible to block copyrighted content in AI-generated images at inference time, no retraining needed.</p>
+              <h4>Benchmarking &amp; Evaluation</h4>
+              <p>Designing evaluations that say something honest about a model: controlled comparisons against a baseline, a clear taxonomy of how a system fails, and human reference points, instead of a single headline number.</p>
             </div>
             <div class="research-area">
               <div class="research-area__icon">03</div>
-              <h4>Responsible AI</h4>
-              <p>Figuring out how to make generative AI systems safer and more ethical as they scale up.</p>
+              <h4>Retrieval-Augmented Generation</h4>
+              <p>Grounding a model's answers in retrieved source material, so that what it says can be traced back to real documents rather than produced from its parameters alone.</p>
             </div>
           </div>
         </div>
@@ -130,15 +171,34 @@
           <div class="timeline__content">
             <div class="timeline__header">
               <div>
+                <h3>Software Engineering Intern</h3>
+                <p class="timeline__org">Cisco &middot; Bangalore</p>
+              </div>
+              <span class="timeline__date">May 2026 - Present</span>
+            </div>
+            <ul class="timeline__details">
+              <li>Working on CVP Insights, an internal platform that pulls network telemetry from across Cisco's product lines into a single data warehouse and makes it queryable through a natural-language chat interface.</li>
+              <li>Designed and documented the system's retrieval-and-grounding (RAG) architecture, so the assistant's answers are backed by actual Cisco documentation rather than unsupported generation.</li>
+              <li>Took on upstream data-quality work: detecting junk and unidentified telemetry, and classifying customers by industry, so the analytics layer stays trustworthy.</li>
+              <li>Work across the full stack, from the semantic data definitions and orchestration through the agent-and-analyst split to the React and FastAPI frontend.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
                 <h3>AI &amp; Backend Developer Intern</h3>
                 <p class="timeline__org">Virtual Foundry</p>
               </div>
-              <span class="timeline__date">Jun 2025 - Present</span>
+              <span class="timeline__date">Jun 2025 - Aug 2025</span>
             </div>
             <ul class="timeline__details">
-              <li>Built EVA, an automated hiring pipeline using FastAPI, MongoDB Atlas, and AWS</li>
-              <li>Built a scalable system that processes thousands of resumes, with 80+ REST API endpoints</li>
-              <li>Integrated VAPI.ai, Twilio, and OpenAI APIs with full logging and monitoring</li>
+              <li>Built EVA, an automated hiring pipeline on FastAPI, MongoDB Atlas, and AWS.</li>
+              <li>Built the system to handle resumes at scale, exposing more than 80 REST API endpoints.</li>
+              <li>Integrated the VAPI.ai, Twilio, and OpenAI APIs, with logging and monitoring throughout.</li>
             </ul>
           </div>
         </div>
@@ -154,8 +214,8 @@
               <span class="timeline__date">Jun 2024 - Present</span>
             </div>
             <ul class="timeline__details">
-              <li>Researching machine unlearning and copyright protection for diffusion models</li>
-              <li>Working on new algorithms for AI safety in generative models</li>
+              <li>Work on copyright protection and machine unlearning for diffusion models, framed around safety in generative systems.</li>
+              <li>Co-authored the ICCVW 2025 paper on inference-time copyright shielding, and contributed to benchmark work now under review at EMNLP.</li>
             </ul>
           </div>
         </div>
@@ -171,8 +231,8 @@
               <span class="timeline__date">Dec 2024 - Jan 2025</span>
             </div>
             <ul class="timeline__details">
-              <li>Built data pipelines for fine-tuning Llama 3 on travel planning tasks</li>
-              <li>Set up preprocessing workflows that improved model performance and output quality</li>
+              <li>Built data pipelines for fine-tuning Llama 3 on travel-planning tasks.</li>
+              <li>Set up the preprocessing workflows that fed the model, which improved the quality of its outputs on the task.</li>
             </ul>
           </div>
         </div>
@@ -182,14 +242,15 @@
           <div class="timeline__content">
             <div class="timeline__header">
               <div>
-                <h3>Lead: AI/ML Team</h3>
+                <h3>AI/ML Lead</h3>
                 <p class="timeline__org">Microsoft Learn Student Ambassadors, KIIT</p>
               </div>
               <span class="timeline__date">Jan 2024 - Present</span>
             </div>
             <ul class="timeline__details">
-              <li>Leading a team of 6, handling project planning and development</li>
-              <li>Built an open-source Stable Diffusion fine-tuning framework, grew to 10+ contributors</li>
+              <li>Lead the AI/ML team of six, handling project planning and technical direction.</li>
+              <li>Run workshops for other students, including InferenceX, a session on the fundamentals of large language models and how inference actually works underneath.</li>
+              <li>Maintain an open-source Stable Diffusion fine-tuning framework that has grown to more than ten contributors.</li>
             </ul>
           </div>
         </div>
@@ -197,91 +258,35 @@
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
-  <section class="section section--alt" id="projects">
+  <!-- ===== SKILLS ===== -->
+  <section class="section section--alt" id="skills">
     <div class="container">
-      <h2 class="section__title reveal">Selected Projects</h2>
-      <div class="projects__grid">
-
-        <article class="project reveal">
-          <div class="project__header">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <div class="project__links">
-              <a href="https://github.com/sohambuilds" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
+      <h2 class="section__title reveal">Technical Skills</h2>
+      <div class="skills__row reveal">
+        <div class="skill-group">
+          <h3>ML &amp; AI</h3>
+          <div class="tags">
+            <span>PyTorch</span><span>Vision-Language Models</span><span>DINOv2</span><span>Diffusion Models</span><span>RAG</span><span>FAISS</span>
           </div>
-          <h3 class="project__title">GeoAgent</h3>
-          <p class="project__desc">
-            A framework on top of state-of-the-art LLMs for geographic reasoning and navigation. 
-            Uses LLM-as-judge for iterative refinement, LoRA fine-tuning with HuggingFace, 
-            and Stable Diffusion integration.
-          </p>
-          <div class="project__tags">
-            <span>LLMs</span><span>LoRA</span><span>HuggingFace</span><span>Stable Diffusion</span>
+        </div>
+        <div class="skill-group">
+          <h3>Agentic Tooling</h3>
+          <div class="tags">
+            <span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>Playwright</span><span>Claude Code</span><span>Gemini APIs</span>
           </div>
-        </article>
-
-        <article class="project reveal">
-          <div class="project__header">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <div class="project__links">
-              <a href="https://github.com/sohambuilds" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Backend</h3>
+          <div class="tags">
+            <span>Snowflake (Cortex)</span><span>FastAPI</span><span>Python</span>
           </div>
-          <h3 class="project__title">EVA: Automated Hiring Pipeline</h3>
-          <p class="project__desc">
-            Full-stack app with a FastAPI backend and MongoDB (6 collections). 
-            Includes Google OAuth, JWT auth, Docker, AWS deployment, and 
-            AI-powered resume analysis with Google Gemini.
-          </p>
-          <div class="project__tags">
-            <span>FastAPI</span><span>MongoDB</span><span>AWS</span><span>Gemini</span><span>Docker</span>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span>React</span>
           </div>
-        </article>
-
-        <article class="project reveal">
-          <div class="project__header">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <div class="project__links">
-              <a href="https://github.com/sohambuilds/interview_eval" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project__title">Automatic Interview Evaluation</h3>
-          <p class="project__desc">
-            Evaluates interview responses using Flask, LangChain, and FAISS. 
-            Has real-time speech recognition, NLP processing, and 
-            ROUGE similarity scoring.
-          </p>
-          <div class="project__tags">
-            <span>Flask</span><span>LangChain</span><span>FAISS</span><span>NLP</span>
-          </div>
-        </article>
-
-        <article class="project reveal">
-          <div class="project__header">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <div class="project__links">
-              <a href="https://github.com/MLSAKIIT/stablediffusionlora" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project__title">Stable Diffusion Fine-tuning Framework</h3>
-          <p class="project__desc">
-            Open-source training pipeline with LoRA optimization and solid docs. 
-            Community-driven with 10+ contributors.
-          </p>
-          <div class="project__tags">
-            <span>LoRA</span><span>Stable Diffusion</span><span>Open Source</span><span>Python</span>
-          </div>
-        </article>
-
+        </div>
       </div>
     </div>
   </section>
@@ -296,35 +301,35 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-11h-5l2-5l-9 11h5z"/></svg>
           </div>
           <h3>Amazon ML Summer School</h3>
-          <p>Selected for Amazon's prestigious ML Summer School, 2025</p>
+          <p>Selected for Amazon ML Summer School, 2025.</p>
         </div>
         <div class="achievement">
           <div class="achievement__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
           </div>
           <h3>AIR 82, Amazon ML Challenge</h3>
-          <p>All India Rank 82 in Amazon ML Challenge 2025</p>
+          <p>All India Rank 82 in the Amazon ML Challenge, 2025.</p>
         </div>
         <div class="achievement">
           <div class="achievement__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
           </div>
           <h3>Department Rank 1</h3>
-          <p>Achieved dept. rank 1 with an SGPA of 10.00 in 5th semester, Computer Science &amp; Engineering</p>
+          <p>Department rank 1 with an SGPA of 10.00 in the fifth semester of Computer Science &amp; Engineering.</p>
         </div>
         <div class="achievement">
           <div class="achievement__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
           <h3>HackNITR 5.0 Finalist</h3>
-          <p>Finalist at NIT Rourkela's premier national hackathon</p>
+          <p>Finalist at HackNITR 5.0, the national hackathon hosted by NIT Rourkela.</p>
         </div>
         <div class="achievement">
           <div class="achievement__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 8 7 8"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 8 17 8"/><path d="M4 22h16"/><path d="M10 22V8h4v14"/><path d="M6 12h12"/></svg>
           </div>
           <h3>MLSA Hackathon Winner</h3>
-          <p>First Place at Microsoft Learn Student Ambassadors Hackathon (2024 &amp; 2025)</p>
+          <p>First place at the Microsoft Learn Student Ambassadors hackathon, in both 2024 and 2025.</p>
         </div>
       </div>
     </div>
@@ -340,7 +345,7 @@
           <p class="education__degree">B.Tech in Computer Science &amp; Engineering</p>
         </div>
         <div class="education__meta">
-          <span class="education__gpa">GPA: 9.24 / 10.00</span>
+          <span class="education__gpa">CGPA: 9.34 / 10.00</span>
           <span class="education__year">2023 - 2027</span>
         </div>
       </div>
@@ -353,8 +358,8 @@
       <div class="contact reveal">
         <h2 class="contact__title">Let's Connect</h2>
         <p class="contact__text">
-          Always up for talking about research, cool projects, or AI/ML opportunities. 
-          Drop me a line.
+          I'm glad to talk about research, the evaluation of AI systems, or relevant roles and
+          collaborations. Email is the most reliable way to reach me.
         </p>
         <a href="mailto:sohamroy.dev@gmail.com" class="btn btn--primary btn--lg">
           sohamroy.dev@gmail.com
@@ -371,7 +376,7 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Soham Roy. Built with intent.</p>
+      <p>&copy; 2026 Soham Roy.</p>
     </div>
   </footer>
 
