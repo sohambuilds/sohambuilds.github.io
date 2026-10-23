@@ -66,11 +66,11 @@ html {
 /*
   One-screen layout: everything is sized in rem, and on desktop the root size
   follows the viewport, so the whole page scales to fit without scrolling.
-  The page is ~43rem tall and ~75rem wide, hence 2.2vh / 1.2vw.
+  The page is ~46rem tall and ~75rem wide, hence 2.1vh / 1.2vw.
 */
 @media (min-width: 1000px) {
   html {
-    font-size: clamp(0.8125rem, min(2.2vh, 1.2vw), 1.1875rem);
+    font-size: clamp(0.8125rem, min(2.1vh, 1.2vw), 1.1875rem);
   }
 }
 
@@ -84,6 +84,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  text-wrap: pretty;
 }
 
 a {
@@ -114,7 +115,7 @@ a:hover {
   min-height: 100dvh;
   max-width: calc(var(--width) + 3rem);
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
