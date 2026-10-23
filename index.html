@@ -3,382 +3,242 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Soham Roy: Researcher & Engineer</title>
-  <meta name="description" content="Soham Roy — computer science undergraduate at KIIT University working on agentic AI systems, evaluation benchmarks, and applied machine learning. Co-author of an ICCVW 2025 paper on copyright protection for diffusion models, with further benchmark work under review." />
+  <title>Soham Roy</title>
+  <meta name="description" content="Soham Roy — computer science undergraduate at KIIT University working on agentic AI, benchmarking and evaluation, and retrieval-augmented generation. Publications at ICCVW 2025 and EMNLP." />
+  <meta name="theme-color" content="#fdfdfd" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sohambuilds.github.io/" />
+  <meta property="og:title" content="Soham Roy" />
+  <meta property="og:description" content="Researcher &amp; engineer working on agentic AI, benchmarking and evaluation, and retrieval-augmented generation." />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Apply a saved theme before first paint so there is no flash -->
+  <script>
+    try {
+      var t = localStorage.getItem('sr-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== NAV ===== -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#" class="nav__logo">SR</a>
-      <div class="nav__links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5" />
+      <path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" />
+    </svg>
+  </button>
+
+  <div class="page">
+
+    <!-- ===== INTRO ===== -->
+    <header class="masthead">
+      <div class="masthead__text">
+        <h1 class="name">Soham Roy</h1>
+        <p class="role">Researcher &amp; Engineer</p>
       </div>
-    </div>
-  </nav>
+      <img src="myfaceagain.jpeg" alt="Portrait of Soham Roy" class="portrait" width="120" height="150" />
+    </header>
 
-  <!-- ===== INTRO ===== -->
-  <header class="intro" id="about">
-    <div class="container">
-      <div class="intro__grid reveal">
-        <div class="intro__photo-wrap">
-        
-          <img src="myfaceagain.jpeg" alt="Soham Roy" class="intro__photo" />
-        </div>
-        <div class="intro__bio">
-          <h1 class="intro__name">Soham Roy</h1>
-          <p class="intro__role">Researcher &amp; Engineer</p>
-          <p class="intro__tagline">Fullstack AI Engineer</p>
-          <p class="intro__desc">
-            Computer science undergraduate at <strong>KIIT University</strong>, currently in my
-            pre-final year. At present, I'm a SWE Intern at <strong>Cisco</strong>. I work on <strong>agentic AI systems</strong>, the
-            <strong>benchmarks</strong> used to evaluate them, and applied machine learning more
-            generally. I'm a member of <strong>RespAI Lab</strong>, where my work on copyright
-            protection for diffusion models was accepted at <strong>ICCVW 2025</strong>. My interests may extend to anything else that contributes to the domain of Human Knowledge.
+    <p class="bio">
+      I'm a pre-final year computer science undergraduate at KIIT University, working on
+      agentic AI, benchmarking and evaluation, and retrieval-augmented generation. I have three
+      accepted publications: one at ICCVW 2025 on copyright protection for generative AI, and two
+      first-author benchmarks at EMNLP. I'm a research member at RespAI Lab, and was most recently a
+      software engineering intern at Cisco.
+    </p>
 
-          </p>
-          <div class="intro__links">
-            <a href="https://github.com/sohambuilds" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            </a>
-            <a href="https://linkedin.com/in/sohamr" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <a href="mailto:sohamroy.dev@gmail.com" aria-label="Email">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-hint" aria-hidden="true">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 10l5 5 5-5"/></svg>
-    </div>
-  </header>
+    <p class="links">
+      <a href="mailto:sohamroy.dev@gmail.com">Email</a>
+      <a href="https://github.com/sohambuilds" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/sohamr" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
 
-  <!-- ===== RESEARCH ===== -->
-  <section class="section section--alt" id="research">
-    <div class="container">
-      <h2 class="section__title reveal">Research &amp; Publications</h2>
-      <div class="research__list">
-        <!-- Publication -->
-        <article class="paper reveal">
-          <div class="paper__venue">ICCVW 2025 &middot; Accepted</div>
-          <h3 class="paper__title">Guardians of Generation: Dynamic Inference-Time Copyright Shielding with Adaptive Guidance for AI Image Generation</h3>
-          <p class="paper__authors">Soham Roy, Abhishek Mishra, Shirish Karande, Murari Mandal</p>
-          <p class="paper__abstract">
-            A method for keeping copyrighted material out of diffusion-model outputs at the point of
-            generation, rather than by retraining the model. The work intervenes during sampling
-            through adaptive guidance, so an already-trained model can be steered away from protected
-            content without the cost of fine-tuning or a fresh training run.
-          </p>
-          <div class="paper__links">
-            <a href="https://arxiv.org/abs/2503.16171" target="_blank" rel="noopener" class="paper__link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              arXiv
-            </a>
+    <main>
+
+      <!-- ===== PUBLICATIONS ===== -->
+      <section class="section" aria-labelledby="publications">
+        <h2 class="section__title" id="publications">Publications</h2>
+
+        <article class="entry">
+          <p class="entry__when">2026</p>
+          <div>
+            <h3 class="entry__title">SCAMMER4U: Benchmarking PII Leakage in Autonomous Web Agents</h3>
+            <p class="entry__meta">EMNLP 2026 Main &middot; First author &middot; with BITS Pilani and Lam Research</p>
+            <p class="entry__text">
+              A pre-registered benchmark measuring whether web agents leak a user's personal information
+              when manipulated by adversarial websites during routine tasks. It pairs 91
+              attacker-controlled environments with benign controls under an eight-axis taxonomy of
+              manipulation tactics, and measures PII leakage and attack detection jointly across four
+              frontier models.
+            </p>
+            <p class="entry__links"><a href="https://arxiv.org/abs/2606.00497" target="_blank" rel="noopener">arXiv</a></p>
           </div>
         </article>
 
-        <!-- Publication -->
-        <article class="paper reveal">
-          <div class="paper__venue">EMNLP (ARR) &middot; Under Review</div>
-          <h3 class="paper__title">"I Strongly Suspect This Website Is a Scam": Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents</h3>
-          <p class="paper__abstract">
-            A benchmark built around a single question: when an autonomous web agent is carrying out a
-            task and lands on a website designed to manipulate it, will the agent give up the user's
-            personal information? It reports two quantities together: how much private data actually
-            leaks, and how reliably the agent recognises that it is under attack. The evaluation covers
-            91 adversarial environments, each paired with a benign control, organised under an
-            eight-part taxonomy of manipulation tactics and tested on four current frontier models. The
-            protocol was pre-registered before any data was collected.
-          </p>
-            <div class="paper__links">
-            <a href="https://arxiv.org/abs/2606.00497" target="_blank" rel="noopener" class="paper__link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              arXiv
-            </a>
+        <article class="entry">
+          <p class="entry__when">2026</p>
+          <div>
+            <h3 class="entry__title">GeoAgent: A Benchmark for Active Visual Geolocation</h3>
+            <p class="entry__meta">EMNLP 2026 Findings &middot; First author &middot; with IIT Bhubaneswar</p>
+            <p class="entry__text">
+              An agentic scaffold that lets vision-language models navigate real Street View
+              environments before committing to a location, instead of analysing static images. The
+              benchmark covers 1,200 locations across 100 cities, with human baselines and ablations
+              that reveal geographic bias between developed and developing regions.
+            </p>
+            <p class="entry__links"><a href="https://github.com/sohambuilds/geoagent" target="_blank" rel="noopener">Code</a></p>
           </div>
         </article>
 
-        <!-- Publication -->
-        <article class="paper reveal">
-          <div class="paper__venue">EMNLP (ARR) &middot; Under Review</div>
-          <h3 class="paper__title">GeoAgent: A Benchmark for Active Visual Geolocation</h3>
-          <p class="paper__abstract">
-            GeoAgent introduces a benchmark for geolocalization in vision-language models based on
-            embodied navigation rather than static image analysis. Instead of predicting a location
-            from a fixed set of images, an agent actively explores Google Street View, moving and
-            rotating before committing to a guess. The benchmark spans 1,200 navigable locations across
-            100 cities worldwide, covering both developed and developing regions and a range of
-            recognisability. Across frontier VLMs, active exploration generally improves accuracy over
-            static multi-view baselines, with Gemini 3.0 Flash and GPT-5 Mini performing best, though
-            models rarely recover from a wrong initial hypothesis and tend to reinforce early mistakes.
-            The results also reveal a marked geographic bias, with most models doing considerably better
-            in developed regions than developing ones. The paper argues that embodied navigation exposes
-            weaknesses in spatial reasoning that static geolocation benchmarks miss, positioning GeoAgent
-            as a more realistic test of agentic geospatial intelligence.
-          </p>
+        <article class="entry">
+          <p class="entry__when">2025</p>
+          <div>
+            <h3 class="entry__title">Guardians of Generation: Dynamic Inference-Time Copyright Shielding with Adaptive Guidance for AI Image Generation</h3>
+            <p class="entry__meta">ICCVW 2025 &middot; <span class="me">Soham Roy</span>, Abhishek Mishra, Shirish Karande, Murari Mandal</p>
+            <p class="entry__text">
+              An inference-time framework that shields diffusion-based image generation from
+              reproducing copyrighted content, without retraining the model.
+            </p>
+            <p class="entry__links"><a href="https://arxiv.org/abs/2503.16171" target="_blank" rel="noopener">arXiv</a></p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== EXPERIENCE ===== -->
+      <section class="section" aria-labelledby="experience">
+        <h2 class="section__title" id="experience">Experience</h2>
+
+        <article class="entry">
+          <p class="entry__when">May &ndash; Jul 2026</p>
+          <div>
+            <h3 class="entry__title">Cisco</h3>
+            <p class="entry__meta">Software Engineering Intern, Network Product Engineering &middot; Bangalore</p>
+            <ul>
+              <li>Built CVP Insights, an internal platform unifying telemetry from five Cisco product lines (Catalyst Center, Switching, Routing, SD-WAN, Wireless) into one Snowflake warehouse, queryable in natural language.</li>
+              <li>Designed a multi-tier entity-resolution pipeline reconciling 16,000+ inconsistently named customer accounts across 13 tables, auto-resolving 76% of escalation records and routing low-confidence matches to human review.</li>
+              <li>Built the platform's RAG layer over Cisco documentation, and an LLM batch-classification pipeline that reclassified 3,400+ mis-tagged accounts, validated with a 50-case eval suite of positive and adversarial queries.</li>
+            </ul>
+          </div>
         </article>
 
-        <!-- Research Areas -->
-        <div class="research__areas reveal">
-          <h3 class="research__areas-title">Current Research Areas</h3>
-          <div class="research__areas-grid">
-            <div class="research-area">
-              <div class="research-area__icon">01</div>
-              <h4>Agentic Systems</h4>
-              <p>AI systems that take actions in an environment, such as browsing, navigating, or calling tools, rather than only returning text. My interest is in how they behave when conditions are adversarial or simply unlike their training data.</p>
-            </div>
-            <div class="research-area">
-              <div class="research-area__icon">02</div>
-              <h4>Benchmarking &amp; Evaluation</h4>
-              <p>Designing evaluations that say something honest about a model: controlled comparisons against a baseline, a clear taxonomy of how a system fails, and human reference points, instead of a single headline number.</p>
-            </div>
-            <div class="research-area">
-              <div class="research-area__icon">03</div>
-              <h4>Retrieval-Augmented Generation</h4>
-              <p>Grounding a model's answers in retrieved source material, so that what it says can be traced back to real documents rather than produced from its parameters alone.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCE ===== -->
-  <section class="section" id="experience">
-    <div class="container">
-      <h2 class="section__title reveal">Experience</h2>
-      <div class="timeline">
-        <div class="timeline__item reveal">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <div>
-                <h3>Software Engineering Intern</h3>
-                <p class="timeline__org">Cisco &middot; Bangalore</p>
-              </div>
-              <span class="timeline__date">May 2026 - Present</span>
-            </div>
-            <ul class="timeline__details">
-              <li>Working on CVP Insights, an internal platform that pulls network telemetry from across Cisco's product lines into a single data warehouse and makes it queryable through a natural-language chat interface.</li>
-              <li>Designed and documented the system's retrieval-and-grounding (RAG) architecture, so the assistant's answers are backed by actual Cisco documentation rather than unsupported generation.</li>
-              <li>Took on upstream data-quality work: detecting junk and unidentified telemetry, and classifying customers by industry, so the analytics layer stays trustworthy.</li>
-              <li>Work across the full stack, from the semantic data definitions and orchestration through the agent-and-analyst split to the React and FastAPI frontend.</li>
+        <article class="entry">
+          <p class="entry__when">Jun &ndash; Sep 2025</p>
+          <div>
+            <h3 class="entry__title">Virtual Foundry</h3>
+            <p class="entry__meta">AI and Backend Developer Intern &middot; Remote</p>
+            <ul>
+              <li>Built EVA, an end-to-end automated hiring pipeline: a FastAPI backend with 80+ REST endpoints, MongoDB Atlas, Google OAuth/JWT authentication, and Docker-based AWS deployment.</li>
+              <li>Integrated AI resume screening with Google Gemini and automated voice interviews through VAPI.ai, processing thousands of candidate applications.</li>
+              <li>Implemented logging and monitoring with Railway and AWS CloudWatch across the Twilio and OpenAI integrations.</li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline__item reveal">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <div>
-                <h3>AI &amp; Backend Developer Intern</h3>
-                <p class="timeline__org">Virtual Foundry</p>
-              </div>
-              <span class="timeline__date">Jun 2025 - Aug 2025</span>
-            </div>
-            <ul class="timeline__details">
-              <li>Built EVA, an automated hiring pipeline on FastAPI, MongoDB Atlas, and AWS.</li>
-              <li>Built the system to handle resumes at scale, exposing more than 80 REST API endpoints.</li>
-              <li>Integrated the VAPI.ai, Twilio, and OpenAI APIs, with logging and monitoring throughout.</li>
+        <article class="entry">
+          <p class="entry__when">Jun 2024 &ndash; Present</p>
+          <div>
+            <h3 class="entry__title">RespAI Lab</h3>
+            <p class="entry__meta">Research Member</p>
+            <ul>
+              <li>Published at ICCVW 2025: a dynamic inference-time framework for copyright shielding in diffusion-based image generation that requires no model retraining.</li>
+              <li>Ongoing research in machine unlearning, agentic AI safety, and benchmark development, including two first-author papers accepted at EMNLP.</li>
             </ul>
           </div>
-        </div>
+        </article>
+      </section>
 
-        <div class="timeline__item reveal">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <div>
-                <h3>Research Member</h3>
-                <p class="timeline__org">RespAI Lab</p>
-              </div>
-              <span class="timeline__date">Jun 2024 - Present</span>
-            </div>
-            <ul class="timeline__details">
-              <li>Work on copyright protection and machine unlearning for diffusion models, framed around safety in generative systems.</li>
-              <li>Co-authored the ICCVW 2025 paper on inference-time copyright shielding, and contributed to benchmark work now under review at EMNLP.</li>
+      <!-- ===== LEADERSHIP ===== -->
+      <section class="section" aria-labelledby="leadership">
+        <h2 class="section__title" id="leadership">Leadership</h2>
+
+        <article class="entry">
+          <p class="entry__when">Jan 2024 &ndash; Present</p>
+          <div>
+            <h3 class="entry__title">Microsoft Learn Student Ambassadors, KIIT</h3>
+            <p class="entry__meta">Lead, AI/ML Team</p>
+            <ul>
+              <li>Lead project planning and technical direction for the AI/ML team. Ran InferenceX, a hands-on workshop on LLM fundamentals and inference, engaging 4,000+ participants.</li>
+              <li>Maintain an open-source <a href="https://github.com/MLSAKIIT/stablediffusionlora" target="_blank" rel="noopener">Stable Diffusion LoRA fine-tuning framework</a> with 10+ contributors.</li>
             </ul>
           </div>
-        </div>
+        </article>
+      </section>
 
-        <div class="timeline__item reveal">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <div>
-                <h3>NLP Research Intern</h3>
-                <p class="timeline__org">IIT Bhubaneswar</p>
-              </div>
-              <span class="timeline__date">Dec 2024 - Jan 2025</span>
-            </div>
-            <ul class="timeline__details">
-              <li>Built data pipelines for fine-tuning Llama 3 on travel-planning tasks.</li>
-              <li>Set up the preprocessing workflows that fed the model, which improved the quality of its outputs on the task.</li>
-            </ul>
-          </div>
-        </div>
+      <!-- ===== EDUCATION ===== -->
+      <section class="section" aria-labelledby="education">
+        <h2 class="section__title" id="education">Education</h2>
 
-        <div class="timeline__item reveal">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <div class="timeline__header">
-              <div>
-                <h3>AI/ML Lead</h3>
-                <p class="timeline__org">Microsoft Learn Student Ambassadors, KIIT</p>
-              </div>
-              <span class="timeline__date">Jan 2024 - Present</span>
-            </div>
-            <ul class="timeline__details">
-              <li>Lead the AI/ML team of six, handling project planning and technical direction.</li>
-              <li>Run workshops for other students, including InferenceX, a session on the fundamentals of large language models and how inference actually works underneath.</li>
-              <li>Maintain an open-source Stable Diffusion fine-tuning framework that has grown to more than ten contributors.</li>
-            </ul>
+        <article class="entry">
+          <p class="entry__when">2023 &ndash; 2027</p>
+          <div>
+            <h3 class="entry__title">Kalinga Institute of Industrial Technology</h3>
+            <p class="entry__meta">B.Tech in Computer Science and Engineering</p>
+            <p class="entry__text">CGPA 9.34 / 10.00 &middot; Expected May 2027</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </article>
+      </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section class="section section--alt" id="skills">
-    <div class="container">
-      <h2 class="section__title reveal">Technical Skills</h2>
-      <div class="skills__row reveal">
-        <div class="skill-group">
-          <h3>ML &amp; AI</h3>
-          <div class="tags">
-            <span>PyTorch</span><span>Vision-Language Models</span><span>DINOv2</span><span>Diffusion Models</span><span>RAG</span><span>FAISS</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>Agentic Tooling</h3>
-          <div class="tags">
-            <span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>Playwright</span><span>Claude Code</span><span>Gemini APIs</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>Data &amp; Backend</h3>
-          <div class="tags">
-            <span>Snowflake (Cortex)</span><span>FastAPI</span><span>Python</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>Frontend</h3>
-          <div class="tags">
-            <span>React</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <!-- ===== ACHIEVEMENTS ===== -->
+      <section class="section" aria-labelledby="achievements">
+        <h2 class="section__title" id="achievements">Achievements</h2>
 
-  <!-- ===== ACHIEVEMENTS ===== -->
-  <section class="section" id="achievements">
-    <div class="container">
-      <h2 class="section__title reveal">Achievements</h2>
-      <div class="achievements__grid reveal">
-        <div class="achievement">
-          <div class="achievement__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-11h-5l2-5l-9 11h5z"/></svg>
-          </div>
-          <h3>Amazon ML Summer School</h3>
-          <p>Selected for Amazon ML Summer School, 2025.</p>
-        </div>
-        <div class="achievement">
-          <div class="achievement__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-          </div>
-          <h3>AIR 82, Amazon ML Challenge</h3>
-          <p>All India Rank 82 in the Amazon ML Challenge, 2025.</p>
-        </div>
-        <div class="achievement">
-          <div class="achievement__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-          </div>
-          <h3>Department Rank 1</h3>
-          <p>Department rank 1 with an SGPA of 10.00 in the fifth semester of Computer Science &amp; Engineering.</p>
-        </div>
-        <div class="achievement">
-          <div class="achievement__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h3>HackNITR 5.0 Finalist</h3>
-          <p>Finalist at HackNITR 5.0, the national hackathon hosted by NIT Rourkela.</p>
-        </div>
-        <div class="achievement">
-          <div class="achievement__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 8 7 8"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 8 17 8"/><path d="M4 22h16"/><path d="M10 22V8h4v14"/><path d="M6 12h12"/></svg>
-          </div>
-          <h3>MLSA Hackathon Winner</h3>
-          <p>First place at the Microsoft Learn Student Ambassadors hackathon, in both 2024 and 2025.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <dl class="pairs">
+          <dt>Amazon</dt>
+          <dd>All India Rank 82 in the Amazon ML Challenge, 2025. Selected for Amazon ML Summer School, 2025.</dd>
+          <dt>Academic</dt>
+          <dd>Department rank 1 in the fifth semester, with an SGPA of 10.00 / 10.00.</dd>
+          <dt>Hackathons</dt>
+          <dd>First place at the Microsoft Learn Student Ambassadors internal hackathon, 2024 and 2025. Finalist at HackNITR 5.0, NIT Rourkela.</dd>
+        </dl>
+      </section>
 
-  <!-- ===== EDUCATION ===== -->
-  <section class="section section--alt" id="education">
-    <div class="container">
-      <h2 class="section__title reveal">Education</h2>
-      <div class="education reveal">
-        <div class="education__main">
-          <h3>Kalinga Institute of Industrial Technology (KIIT DU)</h3>
-          <p class="education__degree">B.Tech in Computer Science &amp; Engineering</p>
-        </div>
-        <div class="education__meta">
-          <span class="education__gpa">CGPA: 9.34 / 10.00</span>
-          <span class="education__year">2023 - 2027</span>
-        </div>
-      </div>
-    </div>
-  </section>
+      <!-- ===== SKILLS ===== -->
+      <section class="section" aria-labelledby="skills">
+        <h2 class="section__title" id="skills">Skills</h2>
 
-  <!-- ===== CONTACT ===== -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="contact reveal">
-        <h2 class="contact__title">Let's Connect</h2>
-        <p class="contact__text">
+        <dl class="pairs">
+          <dt>AI / ML</dt>
+          <dd>PyTorch, Transformers, Vision-Language Models, Diffusion Models, LoRA, RAG</dd>
+          <dt>Agentic tooling</dt>
+          <dd>LangChain, LangGraph, CrewAI, Playwright, Claude Code</dd>
+          <dt>Languages</dt>
+          <dd>Python, C++, SQL, JavaScript</dd>
+          <dt>Databases</dt>
+          <dd>Snowflake, MongoDB, PostgreSQL, Redis</dd>
+          <dt>Cloud &amp; DevOps</dt>
+          <dd>AWS (EC2, S3, Athena), Docker, Git, Linux</dd>
+          <dt>Development</dt>
+          <dd>FastAPI, React, Flask, REST APIs</dd>
+        </dl>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="section" aria-labelledby="contact">
+        <h2 class="section__title" id="contact">Contact</h2>
+        <p>
           I'm glad to talk about research, the evaluation of AI systems, or relevant roles and
-          collaborations. Email is the most reliable way to reach me.
+          collaborations. Email is the most reliable way to reach me:
+          <a href="mailto:sohamroy.dev@gmail.com">sohamroy.dev@gmail.com</a>.
         </p>
-        <a href="mailto:sohamroy.dev@gmail.com" class="btn btn--primary btn--lg">
-          sohamroy.dev@gmail.com
-        </a>
-        <div class="contact__links">
-          <a href="https://github.com/sohambuilds" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/sohamr" target="_blank" rel="noopener">LinkedIn</a>
- 
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Soham Roy.</p>
-    </div>
-  </footer>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Soham Roy</p>
+    </footer>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
