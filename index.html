@@ -41,203 +41,132 @@
   <div class="page">
 
     <!-- ===== INTRO ===== -->
-    <header class="masthead">
-      <div class="masthead__text">
-        <h1 class="name">Soham Roy</h1>
-        <p class="role">Researcher &amp; Engineer</p>
+    <header class="intro">
+      <div class="intro__id">
+        <img src="portrait.jpg" alt="Portrait of Soham Roy" class="portrait" width="64" height="80" />
+        <div>
+          <h1 class="name">Soham Roy</h1>
+          <p class="role">Researcher &amp; Engineer</p>
+        </div>
       </div>
-      <img src="myfaceagain.jpeg" alt="Portrait of Soham Roy" class="portrait" width="120" height="150" />
+      <div class="intro__about">
+        <p class="bio">
+          I'm a pre-final year computer science undergraduate at KIIT University, working on agentic AI,
+          benchmarking and evaluation, and retrieval-augmented generation. I'm a research member at
+          RespAI Lab, and was most recently a software engineering intern at Cisco.
+        </p>
+        <p class="links">
+          <a href="mailto:sohamroy.dev@gmail.com">sohamroy.dev@gmail.com</a>
+          <a href="https://scholar.google.com/citations?user=5JwU1FYAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.alphaxiv.org/@soham-roy" target="_blank" rel="noopener">alphaXiv</a>
+          <a href="https://github.com/sohambuilds" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/sohamr" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
     </header>
 
-    <p class="bio">
-      I'm a pre-final year computer science undergraduate at KIIT University, working on
-      agentic AI, benchmarking and evaluation, and retrieval-augmented generation. I have three
-      accepted publications: one at ICCVW 2025 on copyright protection for generative AI, and two
-      first-author benchmarks at EMNLP. I'm a research member at RespAI Lab, and was most recently a
-      software engineering intern at Cisco.
-    </p>
-
-    <p class="links">
-      <a href="mailto:sohamroy.dev@gmail.com">Email</a>
-      <a href="https://github.com/sohambuilds" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/sohamr" target="_blank" rel="noopener">LinkedIn</a>
-    </p>
-
-    <main>
+    <main class="grid">
 
       <!-- ===== PUBLICATIONS ===== -->
-      <section class="section" aria-labelledby="publications">
-        <h2 class="section__title" id="publications">Publications</h2>
+      <section class="col" aria-labelledby="publications">
+        <h2 class="heading" id="publications">Publications</h2>
 
-        <article class="entry">
-          <p class="entry__when">2026</p>
-          <div>
-            <h3 class="entry__title">SCAMMER4U: Benchmarking PII Leakage in Autonomous Web Agents</h3>
-            <p class="entry__meta">EMNLP 2026 Main &middot; First author &middot; with BITS Pilani and Lam Research</p>
-            <p class="entry__text">
-              A pre-registered benchmark measuring whether web agents leak a user's personal information
-              when manipulated by adversarial websites during routine tasks. It pairs 91
-              attacker-controlled environments with benign controls under an eight-axis taxonomy of
-              manipulation tactics, and measures PII leakage and attack detection jointly across four
-              frontier models.
-            </p>
-            <p class="entry__links"><a href="https://arxiv.org/abs/2606.00497" target="_blank" rel="noopener">arXiv</a></p>
-          </div>
+        <article class="item">
+          <h3 class="item__title">SCAMMER4U: Benchmarking PII Leakage in Autonomous Web Agents</h3>
+          <p class="item__meta">EMNLP 2026 Main &middot; First author &middot; <a href="https://arxiv.org/abs/2606.00497" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="item__desc">Whether web agents leak users' personal data to manipulative websites, across 91 paired environments.</p>
         </article>
 
-        <article class="entry">
-          <p class="entry__when">2026</p>
-          <div>
-            <h3 class="entry__title">GeoAgent: A Benchmark for Active Visual Geolocation</h3>
-            <p class="entry__meta">EMNLP 2026 Findings &middot; First author &middot; with IIT Bhubaneswar</p>
-            <p class="entry__text">
-              An agentic scaffold that lets vision-language models navigate real Street View
-              environments before committing to a location, instead of analysing static images. The
-              benchmark covers 1,200 locations across 100 cities, with human baselines and ablations
-              that reveal geographic bias between developed and developing regions.
-            </p>
-            <p class="entry__links"><a href="https://github.com/sohambuilds/geoagent" target="_blank" rel="noopener">Code</a></p>
-          </div>
+        <article class="item">
+          <h3 class="item__title">GeoAgent: A Benchmark for Active Visual Geolocation</h3>
+          <p class="item__meta">EMNLP 2026 Findings &middot; First author &middot; <a href="https://arxiv.org/abs/2608.29483" target="_blank" rel="noopener">arXiv</a> &middot; <a href="https://github.com/sohambuilds/geoagent" target="_blank" rel="noopener">Code</a></p>
+          <p class="item__desc">VLM agents explore Street View before guessing a location, across 1,200 locations in 100 cities.</p>
         </article>
 
-        <article class="entry">
-          <p class="entry__when">2025</p>
-          <div>
-            <h3 class="entry__title">Guardians of Generation: Dynamic Inference-Time Copyright Shielding with Adaptive Guidance for AI Image Generation</h3>
-            <p class="entry__meta">ICCVW 2025 &middot; <span class="me">Soham Roy</span>, Abhishek Mishra, Shirish Karande, Murari Mandal</p>
-            <p class="entry__text">
-              An inference-time framework that shields diffusion-based image generation from
-              reproducing copyrighted content, without retraining the model.
-            </p>
-            <p class="entry__links"><a href="https://arxiv.org/abs/2503.16171" target="_blank" rel="noopener">arXiv</a></p>
-          </div>
+        <article class="item">
+          <h3 class="item__title">Guardians of Generation: Dynamic Inference-Time Copyright Shielding with Adaptive Guidance for AI Image Generation</h3>
+          <p class="item__meta">ICCVW 2025 &middot; <a href="https://arxiv.org/abs/2503.16171" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="item__desc">Keeps diffusion models from generating copyrighted content at inference time, with no retraining.</p>
         </article>
       </section>
 
       <!-- ===== EXPERIENCE ===== -->
-      <section class="section" aria-labelledby="experience">
-        <h2 class="section__title" id="experience">Experience</h2>
+      <section class="col" aria-labelledby="experience">
+        <h2 class="heading" id="experience">Experience</h2>
 
-        <article class="entry">
-          <p class="entry__when">May &ndash; Jul 2026</p>
-          <div>
-            <h3 class="entry__title">Cisco</h3>
-            <p class="entry__meta">Software Engineering Intern, Network Product Engineering &middot; Bangalore</p>
-            <ul>
-              <li>Built CVP Insights, an internal platform unifying telemetry from five Cisco product lines (Catalyst Center, Switching, Routing, SD-WAN, Wireless) into one Snowflake warehouse, queryable in natural language.</li>
-              <li>Designed a multi-tier entity-resolution pipeline reconciling 16,000+ inconsistently named customer accounts across 13 tables, auto-resolving 76% of escalation records and routing low-confidence matches to human review.</li>
-              <li>Built the platform's RAG layer over Cisco documentation, and an LLM batch-classification pipeline that reclassified 3,400+ mis-tagged accounts, validated with a 50-case eval suite of positive and adversarial queries.</li>
-            </ul>
+        <article class="item">
+          <div class="item__head">
+            <h3 class="item__title">Cisco</h3>
+            <span class="item__when">May &ndash; Jul 2026</span>
           </div>
+          <p class="item__meta">Software Engineering Intern</p>
+          <p class="item__desc">Built CVP Insights, natural-language analytics over telemetry from five Cisco product lines.</p>
         </article>
 
-        <article class="entry">
-          <p class="entry__when">Jun &ndash; Sep 2025</p>
-          <div>
-            <h3 class="entry__title">Virtual Foundry</h3>
-            <p class="entry__meta">AI and Backend Developer Intern &middot; Remote</p>
-            <ul>
-              <li>Built EVA, an end-to-end automated hiring pipeline: a FastAPI backend with 80+ REST endpoints, MongoDB Atlas, Google OAuth/JWT authentication, and Docker-based AWS deployment.</li>
-              <li>Integrated AI resume screening with Google Gemini and automated voice interviews through VAPI.ai, processing thousands of candidate applications.</li>
-              <li>Implemented logging and monitoring with Railway and AWS CloudWatch across the Twilio and OpenAI integrations.</li>
-            </ul>
+        <article class="item">
+          <div class="item__head">
+            <h3 class="item__title">Virtual Foundry</h3>
+            <span class="item__when">Jun &ndash; Sep 2025</span>
           </div>
+          <p class="item__meta">AI and Backend Developer Intern</p>
+          <p class="item__desc">Built EVA, an automated hiring pipeline with Gemini resume screening and AI voice interviews.</p>
         </article>
 
-        <article class="entry">
-          <p class="entry__when">Jun 2024 &ndash; Present</p>
-          <div>
-            <h3 class="entry__title">RespAI Lab</h3>
-            <p class="entry__meta">Research Member</p>
-            <ul>
-              <li>Published at ICCVW 2025: a dynamic inference-time framework for copyright shielding in diffusion-based image generation that requires no model retraining.</li>
-              <li>Ongoing research in machine unlearning, agentic AI safety, and benchmark development, including two first-author papers accepted at EMNLP.</li>
-            </ul>
+        <article class="item">
+          <div class="item__head">
+            <h3 class="item__title">RespAI Lab</h3>
+            <span class="item__when">2024 &ndash; Present</span>
           </div>
+          <p class="item__meta">Research Member</p>
+          <p class="item__desc">Research on copyright protection, machine unlearning, and agentic AI safety.</p>
+        </article>
+
+        <article class="item">
+          <div class="item__head">
+            <h3 class="item__title">Microsoft Learn Student Ambassadors</h3>
+            <span class="item__when">2024 &ndash; Present</span>
+          </div>
+          <p class="item__meta">Lead, AI/ML Team &middot; KIIT</p>
+          <p class="item__desc">Workshops reaching 4,000+ participants, and an open-source <a href="https://github.com/MLSAKIIT/stablediffusionlora" target="_blank" rel="noopener">LoRA fine-tuning framework</a>.</p>
         </article>
       </section>
 
-      <!-- ===== LEADERSHIP ===== -->
-      <section class="section" aria-labelledby="leadership">
-        <h2 class="section__title" id="leadership">Leadership</h2>
+      <!-- ===== EDUCATION, ACHIEVEMENTS, SKILLS ===== -->
+      <div class="col">
+        <section aria-labelledby="education">
+          <h2 class="heading" id="education">Education</h2>
+          <article class="item">
+            <div class="item__head">
+              <h3 class="item__title">KIIT University</h3>
+              <span class="item__when">2023 &ndash; 2027</span>
+            </div>
+            <p class="item__meta">B.Tech, Computer Science &middot; CGPA 9.34 / 10</p>
+          </article>
+        </section>
 
-        <article class="entry">
-          <p class="entry__when">Jan 2024 &ndash; Present</p>
-          <div>
-            <h3 class="entry__title">Microsoft Learn Student Ambassadors, KIIT</h3>
-            <p class="entry__meta">Lead, AI/ML Team</p>
-            <ul>
-              <li>Lead project planning and technical direction for the AI/ML team. Ran InferenceX, a hands-on workshop on LLM fundamentals and inference, engaging 4,000+ participants.</li>
-              <li>Maintain an open-source <a href="https://github.com/MLSAKIIT/stablediffusionlora" target="_blank" rel="noopener">Stable Diffusion LoRA fine-tuning framework</a> with 10+ contributors.</li>
-            </ul>
-          </div>
-        </article>
-      </section>
+        <section aria-labelledby="achievements">
+          <h2 class="heading" id="achievements">Achievements</h2>
+          <ul class="list">
+            <li>All India Rank 82, Amazon ML Challenge 2025</li>
+            <li>Amazon ML Summer School 2025</li>
+            <li>Department rank 1, SGPA 10.00 (semester 5)</li>
+            <li>First place, MLSA hackathon, 2024 &amp; 2025</li>
+            <li>Finalist, HackNITR 5.0</li>
+          </ul>
+        </section>
 
-      <!-- ===== EDUCATION ===== -->
-      <section class="section" aria-labelledby="education">
-        <h2 class="section__title" id="education">Education</h2>
-
-        <article class="entry">
-          <p class="entry__when">2023 &ndash; 2027</p>
-          <div>
-            <h3 class="entry__title">Kalinga Institute of Industrial Technology</h3>
-            <p class="entry__meta">B.Tech in Computer Science and Engineering</p>
-            <p class="entry__text">CGPA 9.34 / 10.00 &middot; Expected May 2027</p>
-          </div>
-        </article>
-      </section>
-
-      <!-- ===== ACHIEVEMENTS ===== -->
-      <section class="section" aria-labelledby="achievements">
-        <h2 class="section__title" id="achievements">Achievements</h2>
-
-        <dl class="pairs">
-          <dt>Amazon</dt>
-          <dd>All India Rank 82 in the Amazon ML Challenge, 2025. Selected for Amazon ML Summer School, 2025.</dd>
-          <dt>Academic</dt>
-          <dd>Department rank 1 in the fifth semester, with an SGPA of 10.00 / 10.00.</dd>
-          <dt>Hackathons</dt>
-          <dd>First place at the Microsoft Learn Student Ambassadors internal hackathon, 2024 and 2025. Finalist at HackNITR 5.0, NIT Rourkela.</dd>
-        </dl>
-      </section>
-
-      <!-- ===== SKILLS ===== -->
-      <section class="section" aria-labelledby="skills">
-        <h2 class="section__title" id="skills">Skills</h2>
-
-        <dl class="pairs">
-          <dt>AI / ML</dt>
-          <dd>PyTorch, Transformers, Vision-Language Models, Diffusion Models, LoRA, RAG</dd>
-          <dt>Agentic tooling</dt>
-          <dd>LangChain, LangGraph, CrewAI, Playwright, Claude Code</dd>
-          <dt>Languages</dt>
-          <dd>Python, C++, SQL, JavaScript</dd>
-          <dt>Databases</dt>
-          <dd>Snowflake, MongoDB, PostgreSQL, Redis</dd>
-          <dt>Cloud &amp; DevOps</dt>
-          <dd>AWS (EC2, S3, Athena), Docker, Git, Linux</dd>
-          <dt>Development</dt>
-          <dd>FastAPI, React, Flask, REST APIs</dd>
-        </dl>
-      </section>
-
-      <!-- ===== CONTACT ===== -->
-      <section class="section" aria-labelledby="contact">
-        <h2 class="section__title" id="contact">Contact</h2>
-        <p>
-          I'm glad to talk about research, the evaluation of AI systems, or relevant roles and
-          collaborations. Email is the most reliable way to reach me:
-          <a href="mailto:sohamroy.dev@gmail.com">sohamroy.dev@gmail.com</a>.
-        </p>
-      </section>
+        <section aria-labelledby="skills">
+          <h2 class="heading" id="skills">Skills</h2>
+          <ul class="list">
+            <li>PyTorch, Transformers, VLMs, Diffusion, LoRA, RAG</li>
+            <li>LangChain, LangGraph, CrewAI, Playwright</li>
+            <li>Python, C++, SQL, JavaScript, FastAPI, React</li>
+            <li>Snowflake, PostgreSQL, MongoDB, Redis, AWS</li>
+          </ul>
+        </section>
+      </div>
 
     </main>
-
-    <footer class="footer">
-      <p>&copy; 2026 Soham Roy</p>
-    </footer>
-
   </div>
 
   <script src="script.js"></script>
